@@ -1,6 +1,7 @@
 from games import *
 from recommendations import *
 from jokes import *
+from ascii_art import *
 
 
 def main():
@@ -8,9 +9,9 @@ def main():
     while True:
         table_menu = PrettyTable()
         print('Ви в головному меню. Оберіть номер розваги:')
-        table_menu.add_column("Номер", ["1", "2", "3", "4", "5", "6"])
+        table_menu.add_column("Номер", ["1", "2", "3", "4", "5", "6", "7"])
         table_menu.add_column("Розваги", ["Ігри", "Анекдот", "Цікаві факти", "Рекомендувати гру",
-                                          "Рекомендувати фільм", "Вихід"])
+                                          "Рекомендувати фільм", "ASCII ART", "Вихід"])
         print(table_menu)
         sleep(1)
         choice = int(input('Введіть обраний номер: '))
@@ -42,6 +43,8 @@ def main():
         elif choice == 5:
             recommend_film()
         elif choice == 6:
+            ascii_art()
+        elif choice == 7:
             print("Робота чат-бота завершена! До зустрічі!")
             break
 

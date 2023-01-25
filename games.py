@@ -25,7 +25,7 @@ def rock_paper_scissors():
         computer = choices[random.randint(0, 2)]
         print("Твій вибір " + player + ", комп'ютер обрав " + computer + ".")
         if player == computer:
-            cprint("Нічия!", 'yellow', 'on_black')
+            cprint("Нічия!", 'yellow', 'on_blue')
         elif player == "камінь":
             if computer == "ножиці":
                 cprint("Вітаю! Ти переміг!", 'green')
