@@ -8,9 +8,9 @@ def jokes():
     while True:
         print("Бажаєте ще анекдот?")
         choice = str(input('Відповідь (y/n): '))
-        if choice == "y":
+        if choice.lower() == "y":
             sleep(1)
             print(pyjokes.get_joke())
-        elif choice == "n":
+        elif choice.lower() == "n":
             sleep(1)
             break

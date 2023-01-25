@@ -25,7 +25,7 @@ def rock_paper_scissors():
         computer = choices[random.randint(0, 2)]
         print("Твій вибір " + player + ", комп'ютер обрав " + computer + ".")
         if player == computer:
-            cprint("Вітаю! Ти переміг!", 'yellow', 'on_black')
+            cprint("Нічия!", 'yellow', 'on_black')
         elif player == "камінь":
             if computer == "ножиці":
                 cprint("Вітаю! Ти переміг!", 'green')
@@ -90,4 +90,3 @@ def guess_word():
                     print(f'\nТакої літери в слові немає, залишилось {num_chances_to_guess} спроб!')
         else:
             print('Помилка вводу, спробуйте знову!')
-            continue
