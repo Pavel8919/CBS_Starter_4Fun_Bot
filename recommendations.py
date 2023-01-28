@@ -28,13 +28,12 @@ def interesting_facts():
     while True:
         print("\nБажаєте ще цікавий факт?")
         choice = str(input('Відповідь (y/n): '))
-        if choice == "y":
+        if choice.lower() == "y":
             sleep(1)
             print(facts[random.randint(0, 10)])
-        elif choice == "n":
+        elif choice.lower() == "n":
             sleep(1)
             break
-    pass
 
 
 def recommend_game():
@@ -60,7 +59,6 @@ def recommend_game():
         return_to_main()
     elif game_choice == 4:
         return_to_main()
-        pass
 
 
 def recommend_film():
@@ -86,7 +84,6 @@ def recommend_film():
         return_to_main()
     elif film_choice == 4:
         return_to_main()
-        pass
 
 
 def return_to_main():
